@@ -1,15 +1,15 @@
 version: 0.2
 
 phases:
-
   install:
     commands:
-      - echo Installing
+      - echo Installing dependencies
+      - npm install
 
   build:
     commands:
-      - echo Building
+      - echo Build successful
 
-  post_build:
-    commands:
-      - echo Deployment Started
+artifacts:
+  files:
+    - '**/*'
